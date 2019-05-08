@@ -1,0 +1,138 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+% !TeX spellcheck = en
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry} % Document margins
+
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
+\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{mathptmx}
+
+\name{Mohammad Solaiman Jawad} % Your name
+\address {
+          \href{mailto:msjawad@uwaterloo.ca}{msjawad@uwaterloo.ca} \\
+          \href{https://www.linkedin.com/in/solaiman-jawad}{in/solaiman-jawad} \\
+          \href{https://github.com/MSJawad}{github.com/MSJawad}
+         }
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+  \vspace {0.3em}
+  \begin{list}{$\cdot$}{\leftmargin=0.5em}
+    \itemsep -0.3em \vspace{-0.3em}
+    \item Skilled in Javascript, C++, C, Scheme, Python, R, SQL, Go, Django, Bash, Git, Keras and Tensorflow
+    \item Interested in web development, infrastructure, machine learning and system performance enhancement
+  \end{list}
+  \vspace{0.3em}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+  \begin{rSubsection}{The Co-Operators}
+    {Jan -- Apr '19}
+         {Innovation Developer (Web Development)}
+         {Waterloo, ON}
+       \item Built a cross platform chatbot using nodeJS that collected data for a quote generation process.
+       \item Chatbot successfully increased average quote generation efficiency for advisors by {\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}450\%.
+    \item Created annother intelligent, cross-platform chatbot to help company advisers hire new employees. 
+    \item The chatbot was developed with NodeJS(backend) and React.js(front-end) and was able to sort questions by relevance and deliver articles, text and smart image searches.
+     \item Created HTTP pipelines to implement bug trackers for several projects and connect them to Jira.
+  \end{rSubsection}
+
+	\begin{rSubsection}{BRAC University}
+		{Jun -- Jul '16}
+		{Analyst Intern}
+		{Dhaka, BD}
+		\item Evaluated results of analysis based on the response of quizzes, questionnaires, and student profiles. 
+		\item Updated decision tree classifiers for a prediction model of academic success of currently enrolled students.
+	\end{rSubsection}
+
+  
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+  
+  \begin{rSubsection}{Axys}
+	  {\em {\href{https://github.com/MSJawad/AXYS}
+		    {git.io/vpGt1}}}
+	  {}
+
+    \item A web platform built as a way to help developers connect with designers to collaborate on projects.
+    \item Won "best use of Amazon Web Services" award at Starterhacks 2018.
+      
+  \end{rSubsection}
+
+	\begin{rSubsection}{restTorrent}
+		{\em {\href{https://github.com/MSJawad/restTorrent}
+				{git.io/fjsVG}}}
+		{}
+		
+		\item A rest API that uses bencode URLs to help download files, similar to how torrent files are downloaded.
+		\item Uses UDP instead of traditional TCP to enable faster speeds with stable connections.
+		
+	\end{rSubsection}
+
+  \begin{rSubsection}{bigRSA}
+	  {\em {\href{https://github.com/MSJawad/bigRSA}
+		    {git.io/vNO7D}}}
+	  {}
+
+    \item Designed an optimised program that implements the RSA cryptosystem to encrypt and decrypt messages.
+    
+    \end{rSubsection}
+    
+   \begin{rSubsection}{ANN-Bank}
+	  {\em {\href{https://github.com/MSJawad/ANN-Bank-Solutions}
+		    {git.io/fAzBD}}}
+	  {}
+
+    \item Implemented a neural network that was able to predict, with a 86\% testing set accuracy, which customers would leave a particular bank, given a dataset of their recent transaction history.
+   
+    
+  \end{rSubsection}
+
+  \begin{rMinisection}
+    \item {\em Other notable projects:}
+      \href{https://github.com/MSJawad/Fuzzy-Spellcheck}{\textbf{fzySpellcheck}},
+      \href{https://github.com/MiltonIp/Biquadris}{\textbf{Biquadris}},
+      \href{https://github.com/MSJawad/CNNandDogs}{\textbf{CNNandDogs}},      
+      \href{https://github.com/MSJawad/sentimentAnalysis}{\textbf{sentimentAnalysis}},
+      \href{https://github.com/MSJawad/Neural-Network}{\textbf{neuralNet}}
+  \end{rMinisection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+  \begin{rSubsection}{University of Waterloo}
+		     {Sept '17 -- Sept '22 \em (expected)}
+		     {Bachelors of Mathematics, Honours}
+		     {}
+	\item Joint Major in Computational Mathematics and Statistics
+	\item Relevant Courses: Object Oriented Programming, Functional Programming, Algorithm Design and Data Abstraction, Data Types and Structures, Logic and Computation
+    \item  Recipient of the President's Scholarship
+      ($95^{th}$ percentile admission average)
+  \end{rSubsection}
+  \begin{rMinisection}
+  	\item Currently doing "Computer Science: Algorithms, Theory, and Machines", a Princeton open source course.
+  \end{rMinisection}
+\end{rSection} 
+
+\end{document}
