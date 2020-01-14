@@ -4,11 +4,13 @@
 % !TeX spellcheck = en
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.52in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.50in,right=0.5in,bottom=0.4in]{geometry} % Document margins
 
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
 \usepackage{marvosym}
 \usepackage{graphicx}
+
+\renewcommand{\sfdefault}{mdugm}
 
 \name{Solaiman Jawad} % Your name
 \address {
@@ -39,14 +41,26 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{\textbf{Work Experience}}
+
+  \begin{rSubsection}{Intelerad Medical Systems}
+   {Sept -- Dec '19}
+   		{Software Developer (ML/Infrastructure)}
+		{Toronto, ON}
+		\item Developed and evaluated muliple neural network architectures to classify hanging protocols in chest x-rays, achieving an 88\% F1 score on the classification of various anterior and lateral viewing angles
+		\item Implemented and configured a variation of {\underline{\href{https://pjreddie.com/media/files/papers/YOLOv3.pdf}{YoloV3}}} for object detection of vertebra in the spinal column
+		\item Built cloud backends for the training and inference of models for multiple projects using AWS Terraform
+		\item Co-authored two research abstracts on  Deep Learning submitted to SIIM 2020 by the Innovation Lab
+	
+  \end{rSubsection}
+
   \begin{rSubsection}{The Co-Operators}
     {Jan -- Apr '19}
          {Innovation Developer (Web Development)}
-         {Waterloo, ON}
-       \item Built a quote generating chatbot using NodeJS that enacts smart dialogue and collects data by parsing documents, reducing quote generation time by 81\% by using efficient, concurrent parsing algorithms
-       \item Worked cross{-}team on an assessment tool used to identify businesses and generate risk appetite scores
+         {Kitchener, ON}
+       \item Built a quote generating chatbot using NodeJS that enacts dialogue and parses data from documents
        \item Authored search by relevance functionality in a hiring program, allowing it to deliver articles and image searches to users, and enabling quick lookup of queries or forms in the program's question tree
-     \item Constructed a rest API to help implement bug trackers for several projects and connect them to Jira
+        \item Constructed a rest API to help implement bug trackers for several projects and connect them to Jira
+
   \end{rSubsection}
 
 	\begin{rSubsection}{BRAC University}
@@ -55,7 +69,6 @@
 		{Dhaka, BD}
 		\item Updated decision tree classifiers for a prediction model of academic success of currently enrolled students
 		\item Evaluated results of analysis based on the response of quizzes, questionnaires, and student profiles
-
 	\end{rSubsection}
   
 \end{rSection} 
@@ -66,16 +79,6 @@
 
 \begin{rSection}{\textbf{Projects}}
   
-  \begin{rSubsection}{Axys}
-	  {\em {\href{https://github.com/MSJawad/AXYS}
-		    {git.io/vpGt1}}}
-	  {}
-
-    \item Constructed a web platform to help developers connect with designers and collaborate on projects
-    \item Won "Best Use of Amazon Web Services" award at Starterhacks 2018
-      
-  \end{rSubsection}
-
 	\begin{rSubsection}{restTorrent}
 		{\em {\href{https://github.com/MSJawad/restTorrent}
 				{git.io/fjsVG}}}
@@ -101,7 +104,7 @@
 		    {(private repo) git.io/fjoeS}}}
 	  {}
 
-    \item Developed a turn-based Tetris game, complete with varying levels, greedy hinting, and a ncurses display
+    \item Developed a turn-based Tetris game, complete with difficulty levels, greedy hinting, and a Xlib display
     \item Built under the object{-}oriented paradigm, supporting multiple design patterns and rotation algorithmns
    
     
@@ -120,11 +123,11 @@
 
 \begin{rSection}{\textbf{Education}}
   \begin{rSubsection}{University of Waterloo}
-		     {Sept '17 -- Sept '22 \em (expected)}
+		     {Sept '17 -- Sept '22}
 		     {Candidate for Bachelors of Mathematics, Honours}
 		     {}
 	\item Joint Major in Computational Mathematics and Combinatorics and Optimization
-	\item Relevant Courses: Object Oriented Programming, Functional Programming, Algorithm Design and Data Abstraction, Data Types and Structures, Logic and Computation
+	\item Relevant Courses: Object Oriented Programming, Functional Programming, Data Types and Structures, Computers and Computer Systems(Assembly), Logic and Computation
     \item  Recipient of the President's Scholarship
       ($95^{th}$ percentile admission average)
   \end{rSubsection}
