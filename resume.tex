@@ -4,20 +4,18 @@
 % !TeX spellcheck = en
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.50in,right=0.5in,bottom=0.4in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.45in,right=0.5in,bottom=0.45in]{geometry} % Document margins
 
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
 \usepackage{marvosym}
 \usepackage{graphicx}
 
-\renewcommand{\sfdefault}{mdugm}
-
 \name{Solaiman Jawad} % Your name
 \address {
-		  \href{http://MSJawad.github.io}{MSJawad.github.io} \\
+		  \href{http://MSJawad.github.io}{msjawad.github.io} \\
           \href{mailto:msjawad@uwaterloo.ca}{msjawad@uwaterloo.ca} \\
           \href{https://www.linkedin.com/in/solaiman-jawad}{in/solaiman-jawad} \\
-          \href{https://github.com/MSJawad}{github.com/MSJawad}
+          \href{https://github.com/MSJawad}{github.com/msjawad}
          }
 
 \begin{document}
@@ -27,11 +25,11 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{\textbf{Skills}}
-  \vspace {0.3em}
+  \vspace {0.3em} 
   \begin{list}{$\cdot$}{\leftmargin=0.5em}
     \itemsep -0.3em \vspace{-0.3em}
-    \item Experienced with C, C++, Python, Javascript, Node, Scheme, SQL, Django, Bash, Git, HTML, CSS
-    \item Interested in Back-end, Web Development, Infrastructure, Systems Design, Embedded Systems, Robotics
+    \item Experienced with C, C++, JavaScript, Python, Go, Node, Git, Scheme, SQL, Django, Bash
+    \item Interested in infrastructure, systems design, backend, web development, embedded systems, robotics
   \end{list}
   \vspace{0.3em}
 \end{rSection}
@@ -46,10 +44,10 @@
    {Sept -- Dec '19}
    		{Software Developer (ML/Infrastructure)}
 		{Toronto, ON}
-		\item Developed and evaluated muliple neural network architectures to classify hanging protocols in chest x-rays, achieving an 88\% F1 score on the classification of various anterior and lateral viewing angles
-		\item Implemented and configured a variation of {\underline{\href{https://pjreddie.com/media/files/papers/YOLOv3.pdf}{YoloV3}}} for object detection of vertebra in the spinal column
+		\item Developed and evaluated multiple neural network architectures to classify hanging protocols in chest X-rays, achieving an 88\% F1 score on the classification of various anterior and lateral viewing angles
+		\item Implemented and configured a variation of {\underline{\href{https://pjreddie.com/media/files/papers/YOLOv3.pdf}{YoloV3}}} for object detection of vertebrae in the spinal column
 		\item Built cloud backends for the training and inference of models for multiple projects using AWS Terraform
-		\item Co-authored two research abstracts on  Deep Learning submitted to SIIM 2020 by the Innovation Lab
+		\item Co-authored two research abstracts on  deep learning submitted to SIIM 2020 by the Innovation Lab
 	
   \end{rSubsection}
 
@@ -57,9 +55,9 @@
     {Jan -- Apr '19}
          {Innovation Developer (Web Development)}
          {Kitchener, ON}
-       \item Built a quote generating chatbot using NodeJS that enacts dialogue and parses data from documents
-       \item Authored search by relevance functionality in a hiring program, allowing it to deliver articles and image searches to users, and enabling quick lookup of queries or forms in the program's question tree
-        \item Constructed a rest API to help implement bug trackers for several projects and connect them to Jira
+       \item Built a quote generating chatbot that enacts dialogue and concurrently parses data from documents
+       \item Incorporated search by relevance functionality in the question and form tree of a hiring program
+        \item Constructed a REST API to help implement bug trackers for several projects and connect them to Jira
 
   \end{rSubsection}
 
@@ -78,15 +76,14 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{\textbf{Projects}}
-  
-	\begin{rSubsection}{restTorrent}
-		{\em {\href{https://github.com/MSJawad/restTorrent}
-				{git.io/fjsVG}}}
+
+\begin{rSubsection}{pathfinder}
+		{\em {\href{https://github.com/MSJawad/pathfinder}
+				{git.io/JvUHk}}}
 		{}
 		
-		\item Built a rest API that uses bencode URLs to track peers according to seed ratio and download files
-		\item Used UDP protocol instead of traditional TCP to enable faster speeds given stable connections
-		
+		\item Built a program that generates mazes and displays the performance of different pathfinding algorithmns
+		\item	Uses a randomised version of Prim's algorithm to generate mazes with minimal dead ends
 	\end{rSubsection}
 
   \begin{rSubsection}{bigRSA}
@@ -101,18 +98,26 @@
     
    \begin{rSubsection}{Biquadris}
 	  {\em {\href{https://github.com/MiltonIp/Biquadris}
-		    {(private repo) git.io/fjoeS}}}
+		    {git.io/fjoeS}}}
 	  {}
 
     \item Developed a turn-based Tetris game, complete with difficulty levels, greedy hinting, and a Xlib display
     \item Built under the object{-}oriented paradigm, supporting multiple design patterns and rotation algorithmns
-   
-    
+ 
   \end{rSubsection}
-
+	
+	  \begin{rSubsection}{restTorrent}
+		{\em {\href{https://github.com/MSJawad/restTorrent}
+				{git.io/fjsVG}}}
+		{}
+		
+		\item  Constructed a REST API that uses bencode URLs to track peers based on seed ratio and download files
+				
+	\end{rSubsection}	
+	
   \begin{rMinisection}
-    \item {Also check out}{ \textbf{fzyCheck}(Edit Distance Spellchecker)},
-      {\textbf{ANN}(Neural Network)} and more on
+    \item {Check out}{ \textbf{fzySearch} (Edit Distance Spellchecker)},
+      {\textbf{ANeuralNet}}, {\textbf{go-workerpool}} and more on
       \href{https://github.com/MSJawad}{\textbf{Github}}
   \end{rMinisection}
 \end{rSection}
@@ -126,10 +131,8 @@
 		     {Sept '17 -- Sept '22}
 		     {Candidate for Bachelors of Mathematics, Honours}
 		     {}
-	\item Joint Major in Computational Mathematics and Combinatorics and Optimization
-	\item Relevant Courses: Object Oriented Programming, Functional Programming, Data Types and Structures, Computers and Computer Systems(Assembly), Logic and Computation
-    \item  Recipient of the President's Scholarship
-      ($95^{th}$ percentile admission average)
+		\item Joint Major in Computational Mathematics and Combinatorics \& Optimization     
+		\item StarterHacks (2018), UW Data Science Club, President's Scholarship ($95^{th}$ percentile admission average)
   \end{rSubsection}
 \end{rSection} 
 
