@@ -4,11 +4,19 @@
 % !TeX spellcheck = en
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.45in,right=0.5in,bottom=0.45in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.52in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
 \usepackage{marvosym}
 \usepackage{graphicx}
+
+\DeclareRobustCommand{\&}{%
+  \ifdim\fontdimen1\font>0pt
+    \textsl{\symbol{`\&}}%
+  \else
+    \symbol{`\&}%
+  \fi
+}
 
 \name{Solaiman Jawad} % Your name
 \address {
@@ -28,8 +36,8 @@
   \vspace {0.3em} 
   \begin{list}{$\cdot$}{\leftmargin=0.5em}
     \itemsep -0.3em \vspace{-0.3em}
-    \item Experienced with C, C++, JavaScript, Python, Go, Node, Git, Scheme, SQL, Django, Bash
-    \item Interested in infrastructure, systems design, backend, web development, embedded systems, robotics
+    \item Experienced with C, C++, JavaScript, Python, Node, Go, Git, Terraform, Scheme, SQL, Bash
+    \item Interested in systems design, backend engineering, infrastructure, machine learning and data engineering
   \end{list}
   \vspace{0.3em}
 \end{rSection}
@@ -42,13 +50,13 @@
 
   \begin{rSubsection}{Intelerad Medical Systems}
    {Sept -- Dec '19}
-   		{Software Developer (ML/Infrastructure)}
+   		{Software Developer (Machine Learning/Infrastructure)}
 		{Toronto, ON}
-		\item Developed and evaluated multiple neural network architectures to classify hanging protocols in chest X-rays, achieving an 88\% F1 score on the classification of various anterior and lateral viewing angles
+		\item Worked on image recognition initiatives for Intelerad's image viewer suite and cloud deployment platform
+		\item Improved X-ray hanging protocol by developing neural network architecture to classify viewing angles
 		\item Implemented and configured a variation of {\underline{\href{https://pjreddie.com/media/files/papers/YOLOv3.pdf}{YoloV3}}} for object detection of vertebrae in the spinal column
-		\item Built cloud backends for the training and inference of models for multiple projects using AWS Terraform
-		\item Co-authored two research abstracts on  deep learning submitted to SIIM 2020 by the Innovation Lab
-	
+		\item Updated image parsing tools to utilize better pixel mapping algorithms, improving throughput by 45\%
+		\item Built scalable, fault-tolerant training and inference pipelines for multiple projects using AWS Terraform
   \end{rSubsection}
 
   \begin{rSubsection}{The Co-Operators}
@@ -56,8 +64,8 @@
          {Innovation Developer (Web Development)}
          {Kitchener, ON}
        \item Built a quote generating chatbot that enacts dialogue and concurrently parses data from documents
-       \item Incorporated search by relevance functionality in the question and form tree of a hiring program
-        \item Constructed a REST API to help implement bug trackers for several projects and connect them to Jira
+       \item Integrated search by relevance functionality in the documentation and question tree of a hiring program
+        \item Developed a REST API to help implement bug trackers for several projects and connected them to Jira
 
   \end{rSubsection}
 
@@ -116,7 +124,7 @@
 	\end{rSubsection}	
 	
   \begin{rMinisection}
-    \item {Check out}{ \textbf{fzySearch} (Edit Distance Spellchecker)},
+    \item {Other notable projects:} {\textbf{axys}},{ \textbf{fzySearch}},
       {\textbf{ANeuralNet}}, {\textbf{go-workerpool}} and more on
       \href{https://github.com/MSJawad}{\textbf{Github}}
   \end{rMinisection}
@@ -128,12 +136,10 @@
 
 \begin{rSection}{\textbf{Education}}
   \begin{rSubsection}{University of Waterloo}
-		     {Sept '17 -- Sept '22}
-		     {Candidate for Bachelors of Mathematics, Honours}
+		     {Sept '17 -- Sept '22 \emph{(expected)}}
+		     {Computational Mathematics and Combinatorics \& Optimization, Joint Major}
 		     {}
-		\item Joint Major in Computational Mathematics and Combinatorics \& Optimization     
-		\item StarterHacks (2018), UW Data Science Club, President's Scholarship ($95^{th}$ percentile admission average)
+		\item StarterHacks (2018), UW Data Science Club, President's Scholarship ($95^{th}$ percentile)
   \end{rSubsection}
 \end{rSection} 
-
 \end{document}
