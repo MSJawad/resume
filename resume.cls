@@ -87,7 +87,7 @@
 % Used to create large resume section
 \newenvironment{rSection}[1]{
   \sectionskip
-  \large\textsc{{\LARGE #1}}
+  \large\textsc{{\Large #1}}
   \sectionlineskip
   \hrule
   \begin{list}{}{
@@ -111,18 +111,12 @@
 %	Education FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rEducationSection}[4]{
-  %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
-  %%    Employer (bold)                     Dates (regular)    %%
-  %%    Title (emphasis)                Location (emphasis)    %%
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {\bf {\Large #1}}                 \hfill                  {    #2}
+\newenvironment{rEducationSection}[3]{
+  {\bf {\large #1}}                 \hfill                  {    #2}
   \ifthenelse{\equal{#3}{}}{}{
   \\
-  {{\large #3}}                 \hfill                  {\em #4} 
+  {{\large #3}}
   }
-  % \cdot used for bullets, items indented
-  \vspace{0.5em}
 }
 
 
@@ -135,7 +129,7 @@
   %%    Employer (bold)                     Dates (regular)    %%
   %%    Title (emphasis)                Location (emphasis)    %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    {\bf {\Large #1}}                 \hfill                  {\em #2}
+    {\bf {\large #1}}                 \hfill                  {\em #2}
   % \cdot used for bullets, items indented
   \begin{list}{$\cdot$}{\leftmargin=1.0em}
   \itemsep -0.5em \vspace{-0.5em}
@@ -153,7 +147,7 @@
   %%    Employer (bold)                     Dates (regular)    %%
   %%    Title (emphasis)                Location (emphasis)    %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    {\bf {\Large #1}}                 \hfill                  {    #2}
+    {\bf {\large #1}}                 \hfill                  {    #2}
   \\
   {{\large #3}}                 \hfill                  {\em #4}
   \ifthenelse{\equal{#5}{}}{}{
