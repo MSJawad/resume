@@ -87,7 +87,7 @@
 % Used to create large resume section
 \newenvironment{rSection}[1]{
   \sectionskip
-  \large\textsc{#1}
+  \large\textsc{{\LARGE #1}}
   \sectionlineskip
   \hrule
   \begin{list}{}{
@@ -106,20 +106,61 @@
   \vspace{0.5em}
 }
 
+
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE FORMATTING
+%	Education FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{
+\newenvironment{rEducationSection}[4]{
   %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
   %%    Employer (bold)                     Dates (regular)    %%
   %%    Title (emphasis)                Location (emphasis)    %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  {\bf #1}                 \hfill                  {    #2}
+  {\bf {\Large #1}}                 \hfill                  {    #2}
   \ifthenelse{\equal{#3}{}}{}{
   \\
-  {\em #3}                 \hfill                  {\em #4}
-  }\smallskip
+  {{\large #3}}                 \hfill                  {\em #4} 
+  }
+  % \cdot used for bullets, items indented
+  \vspace{0.5em}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECT FORMATTING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{rProjectSection}[2]{
+  %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
+  %%    Employer (bold)                     Dates (regular)    %%
+  %%    Title (emphasis)                Location (emphasis)    %%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    {\bf {\Large #1}}                 \hfill                  {\em #2}
+  % \cdot used for bullets, items indented
+  \begin{list}{$\cdot$}{\leftmargin=1.0em}
+  \itemsep -0.5em \vspace{-0.5em}
+}{
+  \end{list}
+  \vspace{0.5em}
+}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE FORMATTING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{rWorkSection}[5]{
+  %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
+  %%    Employer (bold)                     Dates (regular)    %%
+  %%    Title (emphasis)                Location (emphasis)    %%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    {\bf {\Large #1}}                 \hfill                  {    #2}
+  \\
+  {{\large #3}}                 \hfill                  {\em #4}
+  \ifthenelse{\equal{#5}{}}{}{
+  \\
+  \rule{0pt}{1.10em}
+  {\em #5}
+  }
   % \cdot used for bullets, items indented
   \begin{list}{$\cdot$}{\leftmargin=1.0em}
   \itemsep -0.5em \vspace{-0.5em}
