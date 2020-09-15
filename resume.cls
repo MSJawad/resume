@@ -147,13 +147,13 @@
   %%    Employer (bold)                     Dates (regular)    %%
   %%    Title (emphasis)                Location (emphasis)    %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    {\bf {\large #1}}                 \hfill                  {    #2}
+    {\bf {\large #1}}                 \hfill                  {\it #2}
   \\
-  {{\large #3}}                 \hfill                  {\em #4}
+  {\it {#3}}                 \hfill                  {#4}
   \ifthenelse{\equal{#5}{}}{}{
   \\
   \rule{0pt}{1.10em}
-  {\em #5}
+  {#5}
   }
   % \cdot used for bullets, items indented
   \begin{list}{$\cdot$}{\leftmargin=1.0em}
